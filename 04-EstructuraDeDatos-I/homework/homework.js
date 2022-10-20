@@ -27,44 +27,48 @@ if (n === 0 || n === 1) return n;
 return nFibonacci (n - 1) + nFibonacci (n - 2);
 }
 console.log(nFibonacci(8))
+
+
+
+//-----------------------DE AQUÍ EN ADELANTE ES ESTRUCTURA DE DATOS: ---------------------------------------------
+
 // EJERCICIO 3
-// function Queue() {
-//    this.queue = [];
-// }
+function Queue() {
+   this.queue = [];
+}
 
-// Queue.prototype.enqueue = function (element){
-//    this.queue.push(element);
-// };
+Queue.prototype.enqueue = function (element){
+   this.queue.push(element);
+};
 
-// Queue.prototype.dequeue = function (){
-//    return this.queue.shift();
-// };
+Queue.prototype.dequeue = function (){
+   return this.queue.shift();
+};
 
-// Queue.prototype.size = function (){
-//    return this.queue.length;
-// };
+Queue.prototype.size = function (){
+   return this.queue.length;
+};
 
-// var laFilaDelBanco = new Queue();
-// console.log(laFilaDelBanco.size());
+var laFilaDelBanco = new Queue();
+console.log(laFilaDelBanco.size());
 
+laFilaDelBanco.enqueue('Hola');
 
 //------------Mismo ejercicio con class:-----------
-class Queue {
-   constructor(){
-      this.queue = [];
-   }
-enqueue(element) {
-   this.queue.push(element);   
-}
-
-dequeue(){
-   return this.queue.shift();
-}
-
-size(){
-   return this.queue.length;
-}
-}
+// class Queue {
+//    constructor(){
+//       this.queue = [];
+//    }
+// enqueue(element) {
+//    this.queue.push(element);   
+// }
+// dequeue(){
+//    return this.queue.shift();
+// }
+// size(){
+//    return this.queue.length;
+// }
+// }
 
 
 // No modifiquen nada debajo de esta linea

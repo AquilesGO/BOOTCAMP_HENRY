@@ -34,7 +34,7 @@ describe('Un queue', function() {
 
   beforeEach(function() {
     queue = new Queue();
-  });
+  }); 
 
   it('tiene los metodos `enqueue`, `dequeue`, y `size`', function() {
     expect(typeof queue.enqueue).toBe('function');
