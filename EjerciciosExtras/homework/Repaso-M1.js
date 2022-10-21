@@ -16,6 +16,14 @@ const {
 
 var countArray = function(array) {
     // Tu código aca:
+    let a = 'a';
+    Array.isArray(array);
+    let cont = 0;
+    array.forEach(element => {
+        if(Array.isArray(element)){
+
+        }
+    })
     
 }
 
@@ -40,6 +48,22 @@ var countArray = function(array) {
 var countProps = function(obj) {
     // Tu código aca:
 
+    // ejercicio resuelto por otro grupo:
+var len = arr.length;
+
+    for (var i = 0; i < len ; i++) {
+      for(var j = 0 ; j < len - i - 1; j++){ // this was missing
+        if (arr[j] > arr[j + 1]) {
+        // swap
+        var temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j + 1] = temp;
+
+      }
+     }
+    }
+    return arr;
+  }
 }
 
 

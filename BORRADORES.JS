@@ -182,35 +182,3 @@
 //fibo  0            1           1              2      3      5      8      13      21      34      55      89      144     ...
 // return 0     return 1    (n-1) + (n-2)
 
-function LinkedList() {
-    this.head = null;
-    // this._length = 0; // no se usa publicamente, se usa para agregar o guardar en una propiedad, todos los nodos que tiene.
-  }
-  
-  function Node(value) {
-    this.value = value;
-    this.next = null;
-  }
-
-
-LinkedList.prototype.search = function (value){
- if (this.head === null) return null;
- var algunLugar;
- if (typeof algo !== 'funtion') {
-  algunLugar = function (valor) {
-    return valor === algo;
-  };
- } else {
-  algunLugar = algo;
- }
-
- var current = this.head;
- while (current) {
-  if(algunLugar(current.value)) {
-    return current.value;
-  } else {
-    current = current.next;
-  }
- }
- return null;
-};
