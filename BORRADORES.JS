@@ -182,3 +182,11 @@
 //fibo  0            1           1              2      3      5      8      13      21      34      55      89      144     ...
 // return 0     return 1    (n-1) + (n-2)
 
+
+function factorear(num) {
+var array = [];
+for (let i = 1; i < 10; i++) {
+  if(num % i === 0) array.push(i);
+}
+console.log(array);
+}
