@@ -183,10 +183,119 @@
 // return 0     return 1    (n-1) + (n-2)
 
 
-function factorear(num) {
-var array = [];
-for (let i = 1; i < 10; i++) {
-  if(num % i === 0) array.push(i);
+// function factorear(num) {
+// var array = [];
+// for (let i = 1; i < 10; i++) {
+//   if(num % i === 0) array.push(i);
+// }
+// console.log(array);
+// }
+
+
+
+
+// arr = [{
+//     name:"Carol",
+//     ticket:"FALSO",
+//     estado: "Desconocido"
+//   },{
+//     name:"Gonzalo",
+//     ticket:"VIP",
+//     estado: "Conocido"
+//   },{
+//     Name: "Micaias",
+//     ticket:"VIP",
+//     estado: "Conocido"
+//   },{
+//     Name: "Coraline",
+//     ticket:"FALSO",
+//     estado: "Desconocido"
+//   },{
+//     Name: "Micaias",
+//     ticket:"VIP",
+//     estado: "Desconocido"
+//   },{
+//     name:"Mati",
+//     ticket:"VIP",
+//     estado: "Conocido"
+//   }
+// ]
+
+
+// console.log(arr[1].estado)
+// console.log(arr[1].ticket)
+// //-------------------------------
+
+// console.log(Array.isArray(factura))
+// console.log(typeof factura)
+
+// var factura = [104.0, 203.21, 459, 59.24, 5.03];
+// var acc = 0;
+// for (let i = 0; i < factura.length; i++) {
+//     acc += factura[i];
+//   }
+//   console.log(acc)
+
+// function Queue() {
+//     this.array = [];
+//   }
+  
+//   Queue.prototype.enqueue = function(elemento) {
+//     return this.array.push(elemento);
+//   }
+  
+//   Queue.prototype.dequeue = function() {
+//     return this.array.shift();
+//   }
+  
+//   Queue.prototype.size = function() {
+//     return this.array.length;
+//   }
+
+// //--------------------------------------------------
+// var arr = [23, 43, "OUT", 65, "OUT", 32, 55, "OUT"];
+
+// function henryParking(arr) {
+//     // Tu código aquí:
+//     var newqueue = new Queue();
+//     var size = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//       if (arr[i] == "OUT") {
+//         if (size == 0) {
+//           return false;
+//         } else {
+//           newqueue.dequeue();
+//           size--;
+//         }
+//       } else {
+//         newqueue.enqueue(arr[i]);
+//         size++;
+//       }
+//     }
+//     return newqueue;
+//   }console.log(newqueue)
+
+// var n = 3
+
+function isPrime(n) 
+{
+    if (n<=1) return false;
+    for (var i = 2; i <= Math.sqrt(n); i++)
+        if (n % i == 0) return false;
+    return true;
 }
-console.log(array);
-}
+
+console.log(isPrime(3));
+console.log(isPrime(4));
+
+var array = [25, 3, 6, 8, 5, 12, 9, 18, 11, 7];
+
+for (let i = array.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      if (array[j] > array[j + 1]) {  
+      [array[j], array[j + 1]] = [array[j + 1], array[j]]
+      }
+    }
+    if(array[i] % 2 === 0) return false
+  }
+  console.log(array)
